@@ -3,6 +3,8 @@ package testes;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import auxiliar.Constante;
+
 public class Segundo {
 	
 	private static String[] nomes;
@@ -11,10 +13,6 @@ public class Segundo {
 	private static float[] bonus;
 	private static float[] descontos;
 	
-	private static final int QTDE = 3;
-	private static final float SALARIO_LIMITE = 100000;
-	private static final Integer[] OPCOES = {1,2,3,4};	
-
 	private static float calcularSalario(int id){
 		return salarios[id] + bonus[id] - descontos[id];
 	}
@@ -26,7 +24,7 @@ public class Segundo {
 		//		situacao = "pobre";
 		//	}
 	
-		return sl > SALARIO_LIMITE ? "rico" : "pobre";
+		return sl > Constante.SALARIO_LIMITE ? "rico" : "pobre";
 	}
 	
 	private static void imprimir(int id) {
@@ -41,7 +39,7 @@ public class Segundo {
 	}
 	
 	private static void imprimir() {
-		for (int i = 0; i < QTDE; i++) {
+		for (int i = 0; i < Constante.QTDE; i++) {
 			if(nomes[i] != null) {
 				imprimir(i);
 			}
@@ -58,11 +56,11 @@ public class Segundo {
 	}
 
 	public static void main(String[] args) {
-		nomes = new String[QTDE];
-		idades = new int[QTDE];
-		salarios = new float[QTDE];
-		bonus = new float[QTDE];
-		descontos = new float[QTDE];
+		nomes = new String[Constante.QTDE];
+		idades = new int[Constante.QTDE];
+		salarios = new float[Constante.QTDE];
+		bonus = new float[Constante.QTDE];
+		descontos = new float[Constante.QTDE];
 
 		Scanner in = new Scanner(System.in);
 		
@@ -77,11 +75,11 @@ public class Segundo {
 			
 			opcao = in.nextInt();
 			
-			if(Arrays.asList(OPCOES).contains(opcao)) {
+			if(Arrays.asList(Constante.OPCOES).contains(opcao)) {
 				
 				switch (opcao) {
 				case 1:
-					if(i < QTDE) {
+					if(i < Constante.QTDE) {
 						System.out.println("Informe o seu nome:");
 						nomes[i] = in.next();
 						
