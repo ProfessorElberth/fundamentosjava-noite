@@ -1,9 +1,11 @@
 package testes;
 
+import dominio.Funcionario;
+
 public class FuncionarioTeste {
 	
 	public static void main(String[] args) {
-		
+
 		Funcionario func1 = new Funcionario();
 		func1.idade = 42;
 		func1.salario = 1000;
@@ -12,6 +14,7 @@ public class FuncionarioTeste {
 		func1.exibir();
 		
 		Funcionario func2 = new Funcionario();
+		func2.nome = "elberth";
 		func2.idade = 22;
 		func2.salario = 100000;
 		func2.bonus = 5000;

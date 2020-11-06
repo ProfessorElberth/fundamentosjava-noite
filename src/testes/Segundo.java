@@ -24,7 +24,7 @@ public class Segundo {
 		//		situacao = "pobre";
 		//	}
 	
-		return sl > Constante.SALARIO_LIMITE ? "rico" : "pobre";
+		return sl > Constante.SALARIO_LIMITE_RICO ? "rico" : "pobre";
 	}
 	
 	private static void imprimir(int id) {
