@@ -9,18 +9,16 @@ public class Programador extends Funcionario {
 	public Programador() {
 		this.setNome("javeiro");
 	}
-
 	public Programador(String nome, int idade) {
 		super(nome, idade);
 	}
-
 	public Programador(String nome, int idade, float salario, boolean fullStack, String linguagem) {
 		super(nome, idade, salario);
 		this.fullStack = fullStack;
 		this.linguagem = linguagem;
 	}
 	
-	private float calcularSalarioLiquido(){		
+	public float calcularSalarioLiquido(){		
 		float salarioFullStack = this.fullStack ? 1500 : 500;
 		
 		float salarioJava = "java".equalsIgnoreCase(this.linguagem) ? 2000 : 750;

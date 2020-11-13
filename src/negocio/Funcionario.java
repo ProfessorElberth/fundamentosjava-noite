@@ -8,7 +8,8 @@ public abstract class Funcionario {
 	private float salario;
 
 	public Funcionario(){
-		//
+		this.setIdade(Constante.MAIOR_IDADE);
+		this.setSalario(Constante.SALARO_MINIMO);
 	}
 	
 	public Funcionario(String nome, int idade) {
@@ -22,6 +23,8 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 
+	public abstract float calcularSalarioLiquido();
+	
 	protected String obterSituacao(float sl){
 
 		if(sl < Constante.SALARIO_LIMITE_POBRE) {

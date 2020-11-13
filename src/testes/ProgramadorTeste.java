@@ -5,10 +5,10 @@ import dominio.Programador;
 public class ProgramadorTeste {
 
 	public static void main(String[] args) {
-
+		
 		Programador p1 = new Programador();
-		p1.setIdade(42);
-		p1.setSalario(100000);
+//		p1.setIdade(42);
+//		p1.setSalario(100000);
 		p1.setFullStack(true);
 		p1.setLinguagem("java");
 		System.out.println("Programador: " + p1);

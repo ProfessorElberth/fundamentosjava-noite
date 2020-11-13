@@ -7,8 +7,8 @@ public class AdministrativoTeste {
 	public static void main(String[] args) {
 
 		Administrativo adm1 = new Administrativo();
-		adm1.setIdade(42);
-		adm1.setSalario(1000);
+//		adm1.setIdade(42);
+//		adm1.setSalario(1000);
 		adm1.setBonus(500);
 		adm1.setDesconto(200);
 		adm1.exibir();

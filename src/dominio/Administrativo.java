@@ -21,7 +21,7 @@ public class Administrativo extends Funcionario {
 		this.desconto = desconto;
 	}
 	
-	private float calcularSalarioLiquido(){
+	public float calcularSalarioLiquido(){
 		return this.getSalario() + this.bonus - this.desconto;
 	}
 	
