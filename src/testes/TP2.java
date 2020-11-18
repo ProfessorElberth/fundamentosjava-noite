@@ -10,7 +10,7 @@ import negocio.Funcionario;
 
 public class TP2 {
 	
-	private static Funcionario[] funcionarios;
+	private static Funcionario[] funcionarios; //adm prog adm
 	
 	private static void imprimir(int id) {
 		System.out.println(funcionarios[id].toString());

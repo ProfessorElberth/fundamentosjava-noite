@@ -8,4 +8,5 @@ public class Constante {
 	public static final Integer[] OPCOES = {1,2,3,4};
 	public static final int MAIOR_IDADE = 18; 
 	public static final float SALARO_MINIMO = 1045;
+	public static final int QTDE_ESTAGIO = 1000;
 }

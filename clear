@@ -1,0 +1,29 @@
+[33mcommit 268755ee595de43abaa0f3ac7f09130ad35f8ab8[m
+Author: elberth moraes <elberth.moraes@gmail.com>
+Date:   Thu Nov 12 22:10:54 2020 -0300
+
+    Atualizacao das constantes, novo tipo de funcionario estagiario, atualizacao do tp2
+
+[33mcommit 7ce5c74cb5aaec81fd3ac0a4258b671fd1e8bd8e[m
+Author: elberth moraes <elberth.moraes@gmail.com>
+Date:   Tue Nov 10 22:17:12 2020 -0300
+
+    Tratamento de heranca
+
+[33mcommit 96fca7633bfa421f0ee378dbcc8a1fcb8413282d[m
+Author: elberth moraes <elberth.moraes@gmail.com>
+Date:   Thu Nov 5 22:07:11 2020 -0300
+
+    Criacao da classe de Programador com testes
+
+[33mcommit aced918faf13b6404d6ba52fa169ea3a6fa16ae4[m
+Author: elberth moraes <elberth.moraes@gmail.com>
+Date:   Tue Nov 3 22:10:28 2020 -0300
+
+    Criacao de classe de funcionario, de teste de funcionario e de constantes. Atualizacao da classe Segundo
+
+[33mcommit 6624fbba625862877f873530add24ee2f8c45e4a[m
+Author: elberth moraes <elberth.moraes@gmail.com>
+Date:   Fri Oct 30 09:24:15 2020 -0300
+
+    Atualizacao com switch, com media salarial; classe de funcionario e teste de funcionario
