@@ -7,7 +7,39 @@ import dominio.Estagiario;
 
 public class EstagiarioTeste {
 	
-	private static Estagiario[] estagiarios;
+	private static Estagiario[] estagiarios;// estagio 1, estagio 2, null, null, null
+
+	private static String obterNivel(float salarioLiquido){
+
+		if(salarioLiquido <= 1000) {
+			return "A";
+			
+		}else if (salarioLiquido <= 2000) {			
+			return "B";			
+			
+		}else if (salarioLiquido <= 3000) {
+			return "C";
+		}
+		
+		return "D";
+	}
+	
+	private static void imprimir() {
+		
+		for(Estagiario estagiario : estagiarios) {
+
+			if(estagiario != null) {
+
+				float salario = estagiario.calcularSalarioLiquido();
+				
+				System.out.printf("%-10s | %10.2f | %s\n", 
+						estagiario.getNome(),
+						salario,
+						obterNivel(salario)
+						);
+			}
+		}
+	}
 
 	public static void main(String[] args) {
 		
@@ -64,6 +96,8 @@ public class EstagiarioTeste {
 		System.out.println("Relatório");
 		System.out.println("Nome do estagiário com o maior salário = " + nomeMaiorSalario);
 		System.out.println("Valor do maior salário = " + maiorSalario);
+		
+		imprimir();
 		
 		in.close();
 	}
