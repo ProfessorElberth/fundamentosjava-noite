@@ -15,7 +15,7 @@ public class Empresa {
 		if(this.ultimoNome == null || this.nome == null || this.nomeMeio == null) {
 			throw new NomeIncompletoException("O preenchimento do campo 'nome' está incorreto");
 		}
-		
+				
 		StringBuilder sb = new StringBuilder();
 
 		sb.append(this.ultimoNome.toUpperCase().charAt(0));
@@ -54,10 +54,10 @@ public class Empresa {
 	}
 	public void setFaturamento(float faturamento) throws FaturamentoNegativoException {
 		
-		if(faturamento < 0) {
+		if(faturamento < 10000) {
 			throw new FaturamentoNegativoException("Não é permitido o faturamento negativo");
 		}
 		
-		this.faturamento = faturamento;
+		this.faturamento = faturamento;			
 	}
 }
