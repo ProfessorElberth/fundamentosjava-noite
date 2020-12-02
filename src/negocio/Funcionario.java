@@ -25,6 +25,17 @@ public abstract class Funcionario {
 
 	public abstract float calcularSalarioLiquido();
 	
+	public String obterStringSalarioPorFuncionario(){
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.nome);
+		sb.append(";");
+		sb.append(this.calcularSalarioLiquido());
+		sb.append("\r");
+		
+		return sb.toString();
+	}
+	
 	protected String obterSituacao(float sl){
 
 		if(sl < Constante.SALARIO_LIMITE_POBRE) {

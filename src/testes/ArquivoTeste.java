@@ -54,7 +54,7 @@ public class ArquivoTeste {
 						funcionario = e;
 					}
 					
-					out.write(e.getNome()+";"+salarioLiquido+"\r");
+					out.write(e.obterStringSalarioPorFuncionario());
 					qtde++;
 					
 					break;
@@ -69,7 +69,7 @@ public class ArquivoTeste {
 			out.write(qtde+";"+somaSalarial+"\r");
 			
 			if(funcionario == null) {
-				throw new EstagiarioInexistenteException("Não existe estagiários no arquivo!!!");
+				throw new EstagiarioInexistenteException("Não existem estagiários no arquivo!!!");
 			}
 			
 			System.out.println("Estagiário com o maior salário: " + funcionario.getNome());
